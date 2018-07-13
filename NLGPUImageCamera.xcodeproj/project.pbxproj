@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D28EA1A20E242DF00ED0300 /* VideoProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D28EA1920E242DF00ED0300 /* VideoProcessViewController.m */; };
+		7D28EA1E20E2545200ED0300 /* sample_iPod.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7D28EA1D20E2545200ED0300 /* sample_iPod.m4v */; };
+		7D28EA2D20E2653700ED0300 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D28EA2C20E2653700ED0300 /* CoreMedia.framework */; };
+		7D28EA2F20E2655400ED0300 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D28EA2E20E2655300ED0300 /* OpenGLES.framework */; };
+		7D28EA3120E2656D00ED0300 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D28EA3020E2656C00ED0300 /* CoreVideo.framework */; };
+		7D28EA3320E2658A00ED0300 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D28EA3220E2658A00ED0300 /* CoreGraphics.framework */; };
+		7D6B4B4020F83578006E7CA0 /* VideoPreviewPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B4B3F20F83578006E7CA0 /* VideoPreviewPlayerViewController.m */; };
+		7D9A8EAF20CA872200A41D0F /* NSObject+MKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A8EAE20CA872200A41D0F /* NSObject+MKUtil.m */; };
+		7DB55A0E20DA31B700EA8015 /* NLGPUImage02Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB55A0D20DA31B700EA8015 /* NLGPUImage02Filter.m */; };
+		7DB55A1920DB3C2700EA8015 /* NLGPUImageBluesFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB55A1820DB3C2700EA8015 /* NLGPUImageBluesFilter.m */; };
+		7DB55A1C20DB3C4C00EA8015 /* NLGPUImageRetroFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB55A1B20DB3C4C00EA8015 /* NLGPUImageRetroFilter.m */; };
+		7DB55A1F20DB3C7600EA8015 /* NLGPUImageDarkRedFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB55A1E20DB3C7600EA8015 /* NLGPUImageDarkRedFilter.m */; };
+		7DB55A2220DB3C9600EA8015 /* NLGPUImageGrayOrangeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB55A2120DB3C9600EA8015 /* NLGPUImageGrayOrangeFilter.m */; };
+		7DB55A2520DB3CB300EA8015 /* NLGPUImagePermeableFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB55A2420DB3CB300EA8015 /* NLGPUImagePermeableFilter.m */; };
+		7DFC6CA620C91A7A00A3D126 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC6CA520C91A7A00A3D126 /* AppDelegate.m */; };
+		7DFC6CA920C91A7A00A3D126 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC6CA820C91A7A00A3D126 /* ViewController.m */; };
+		7DFC6CAC20C91A7A00A3D126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DFC6CAA20C91A7A00A3D126 /* Main.storyboard */; };
+		7DFC6CAE20C91A7C00A3D126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DFC6CAD20C91A7C00A3D126 /* Assets.xcassets */; };
+		7DFC6CB120C91A7C00A3D126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DFC6CAF20C91A7C00A3D126 /* LaunchScreen.storyboard */; };
+		7DFC6CB420C91A7C00A3D126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC6CB320C91A7C00A3D126 /* main.m */; };
+		7DFC6CBE20C91A7C00A3D126 /* NLGPUImageCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC6CBD20C91A7C00A3D126 /* NLGPUImageCameraTests.m */; };
+		7DFC6CC920C91A7C00A3D126 /* NLGPUImageCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC6CC820C91A7C00A3D126 /* NLGPUImageCameraUITests.m */; };
+		7DFC6CE420C9211C00A3D126 /* NormalFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC6CE320C9211C00A3D126 /* NormalFilter.m */; };
+		7DFC6CE720C9230300A3D126 /* FilterCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC6CE620C9230300A3D126 /* FilterCameraViewController.m */; };
+		7F7984B3AF6CDF8A8ECB19AA /* libPods-NLGPUImageCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BF6242833929A8491D47F8 /* libPods-NLGPUImageCamera.a */; };
+		9F308DE9975676A271D153FE /* libPods-NLGPUImageCameraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B0FBBEC3F523B3ABBB7990 /* libPods-NLGPUImageCameraUITests.a */; };
+		C8191857DE312ED34602E4BD /* libPods-NLGPUImageCameraTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE259E54E461B5009707159 /* libPods-NLGPUImageCameraTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DFC6CBA20C91A7C00A3D126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DFC6C9920C91A7A00A3D126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DFC6CA020C91A7A00A3D126;
+			remoteInfo = NLGPUImageCamera;
+		};
+		7DFC6CC520C91A7C00A3D126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DFC6C9920C91A7A00A3D126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DFC6CA020C91A7A00A3D126;
+			remoteInfo = NLGPUImageCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BE259E54E461B5009707159 /* libPods-NLGPUImageCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NLGPUImageCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56AC43361E19B528BE0B0D17 /* Pods-NLGPUImageCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLGPUImageCameraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NLGPUImageCameraUITests/Pods-NLGPUImageCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		58B0FBBEC3F523B3ABBB7990 /* libPods-NLGPUImageCameraUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NLGPUImageCameraUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE5DC3FAAC237C1D17AB3C4 /* Pods-NLGPUImageCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLGPUImageCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-NLGPUImageCamera/Pods-NLGPUImageCamera.release.xcconfig"; sourceTree = "<group>"; };
+		796149337EC02FD8C6166ADE /* Pods-NLGPUImageCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLGPUImageCameraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLGPUImageCameraTests/Pods-NLGPUImageCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D28EA1820E242DF00ED0300 /* VideoProcessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoProcessViewController.h; sourceTree = "<group>"; };
+		7D28EA1920E242DF00ED0300 /* VideoProcessViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoProcessViewController.m; sourceTree = "<group>"; };
+		7D28EA1D20E2545200ED0300 /* sample_iPod.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_iPod.m4v; sourceTree = "<group>"; };
+		7D28EA2C20E2653700ED0300 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7D28EA2E20E2655300ED0300 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7D28EA3020E2656C00ED0300 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7D28EA3220E2658A00ED0300 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D6B4B3E20F83578006E7CA0 /* VideoPreviewPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPreviewPlayerViewController.h; sourceTree = "<group>"; };
+		7D6B4B3F20F83578006E7CA0 /* VideoPreviewPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPreviewPlayerViewController.m; sourceTree = "<group>"; };
+		7D9A8EAD20CA872200A41D0F /* NSObject+MKUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MKUtil.h"; sourceTree = "<group>"; };
+		7D9A8EAE20CA872200A41D0F /* NSObject+MKUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MKUtil.m"; sourceTree = "<group>"; };
+		7DB55A0C20DA31B700EA8015 /* NLGPUImage02Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLGPUImage02Filter.h; sourceTree = "<group>"; };
+		7DB55A0D20DA31B700EA8015 /* NLGPUImage02Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLGPUImage02Filter.m; sourceTree = "<group>"; };
+		7DB55A1720DB3C2700EA8015 /* NLGPUImageBluesFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLGPUImageBluesFilter.h; sourceTree = "<group>"; };
+		7DB55A1820DB3C2700EA8015 /* NLGPUImageBluesFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLGPUImageBluesFilter.m; sourceTree = "<group>"; };
+		7DB55A1A20DB3C4C00EA8015 /* NLGPUImageRetroFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLGPUImageRetroFilter.h; sourceTree = "<group>"; };
+		7DB55A1B20DB3C4C00EA8015 /* NLGPUImageRetroFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLGPUImageRetroFilter.m; sourceTree = "<group>"; };
+		7DB55A1D20DB3C7600EA8015 /* NLGPUImageDarkRedFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLGPUImageDarkRedFilter.h; sourceTree = "<group>"; };
+		7DB55A1E20DB3C7600EA8015 /* NLGPUImageDarkRedFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLGPUImageDarkRedFilter.m; sourceTree = "<group>"; };
+		7DB55A2020DB3C9600EA8015 /* NLGPUImageGrayOrangeFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLGPUImageGrayOrangeFilter.h; sourceTree = "<group>"; };
+		7DB55A2120DB3C9600EA8015 /* NLGPUImageGrayOrangeFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLGPUImageGrayOrangeFilter.m; sourceTree = "<group>"; };
+		7DB55A2320DB3CB300EA8015 /* NLGPUImagePermeableFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLGPUImagePermeableFilter.h; sourceTree = "<group>"; };
+		7DB55A2420DB3CB300EA8015 /* NLGPUImagePermeableFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLGPUImagePermeableFilter.m; sourceTree = "<group>"; };
+		7DFC6CA120C91A7A00A3D126 /* NLGPUImageCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLGPUImageCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DFC6CA420C91A7A00A3D126 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7DFC6CA520C91A7A00A3D126 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7DFC6CA720C91A7A00A3D126 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7DFC6CA820C91A7A00A3D126 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7DFC6CAB20C91A7A00A3D126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DFC6CAD20C91A7C00A3D126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DFC6CB020C91A7C00A3D126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DFC6CB220C91A7C00A3D126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DFC6CB320C91A7C00A3D126 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7DFC6CB920C91A7C00A3D126 /* NLGPUImageCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NLGPUImageCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DFC6CBD20C91A7C00A3D126 /* NLGPUImageCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLGPUImageCameraTests.m; sourceTree = "<group>"; };
+		7DFC6CBF20C91A7C00A3D126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DFC6CC420C91A7C00A3D126 /* NLGPUImageCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NLGPUImageCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DFC6CC820C91A7C00A3D126 /* NLGPUImageCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLGPUImageCameraUITests.m; sourceTree = "<group>"; };
+		7DFC6CCA20C91A7C00A3D126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DFC6CE220C9211C00A3D126 /* NormalFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalFilter.h; sourceTree = "<group>"; };
+		7DFC6CE320C9211C00A3D126 /* NormalFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalFilter.m; sourceTree = "<group>"; };
+		7DFC6CE520C9230300A3D126 /* FilterCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterCameraViewController.h; sourceTree = "<group>"; };
+		7DFC6CE620C9230300A3D126 /* FilterCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterCameraViewController.m; sourceTree = "<group>"; };
+		7DFC6CEA20C9241700A3D126 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7DFC6CED20C92A9900A3D126 /* privateAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = privateAPI.h; sourceTree = "<group>"; };
+		9FEF3789994ACC5E10771873 /* Pods-NLGPUImageCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLGPUImageCameraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLGPUImageCameraUITests/Pods-NLGPUImageCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB26C028A032DF7DF565ACFA /* Pods-NLGPUImageCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLGPUImageCameraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NLGPUImageCameraTests/Pods-NLGPUImageCameraTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB7B892CC2DA903DBF357748 /* Pods-NLGPUImageCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLGPUImageCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLGPUImageCamera/Pods-NLGPUImageCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		F6BF6242833929A8491D47F8 /* libPods-NLGPUImageCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NLGPUImageCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DFC6C9E20C91A7A00A3D126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D28EA3320E2658A00ED0300 /* CoreGraphics.framework in Frameworks */,
+				7D28EA3120E2656D00ED0300 /* CoreVideo.framework in Frameworks */,
+				7D28EA2F20E2655400ED0300 /* OpenGLES.framework in Frameworks */,
+				7D28EA2D20E2653700ED0300 /* CoreMedia.framework in Frameworks */,
+				7F7984B3AF6CDF8A8ECB19AA /* libPods-NLGPUImageCamera.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFC6CB620C91A7C00A3D126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8191857DE312ED34602E4BD /* libPods-NLGPUImageCameraTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFC6CC120C91A7C00A3D126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F308DE9975676A271D153FE /* libPods-NLGPUImageCameraUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DFC6C9820C91A7A00A3D126 = {
+			isa = PBXGroup;
+			children = (
+				7DFC6CA320C91A7A00A3D126 /* NLGPUImageCamera */,
+				7DFC6CBC20C91A7C00A3D126 /* NLGPUImageCameraTests */,
+				7DFC6CC720C91A7C00A3D126 /* NLGPUImageCameraUITests */,
+				7DFC6CA220C91A7A00A3D126 /* Products */,
+				C082A276704EB90B2AD80508 /* Pods */,
+				B89DFEC343356019ADF27E86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7DFC6CA220C91A7A00A3D126 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DFC6CA120C91A7A00A3D126 /* NLGPUImageCamera.app */,
+				7DFC6CB920C91A7C00A3D126 /* NLGPUImageCameraTests.xctest */,
+				7DFC6CC420C91A7C00A3D126 /* NLGPUImageCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DFC6CA320C91A7A00A3D126 /* NLGPUImageCamera */ = {
+			isa = PBXGroup;
+			children = (
+				7DFC6CEC20C929E200A3D126 /* Util */,
+				7DFC6CE920C9231A00A3D126 /* ViewController */,
+				7DFC6CD720C91BBC00A3D126 /* FilterMode */,
+				7DFC6CA420C91A7A00A3D126 /* AppDelegate.h */,
+				7DFC6CA520C91A7A00A3D126 /* AppDelegate.m */,
+				7DFC6CAA20C91A7A00A3D126 /* Main.storyboard */,
+				7DFC6CAD20C91A7C00A3D126 /* Assets.xcassets */,
+				7DFC6CAF20C91A7C00A3D126 /* LaunchScreen.storyboard */,
+				7DFC6CB220C91A7C00A3D126 /* Info.plist */,
+				7DFC6CB320C91A7C00A3D126 /* main.m */,
+				7DFC6CEA20C9241700A3D126 /* PrefixHeader.pch */,
+			);
+			path = NLGPUImageCamera;
+			sourceTree = "<group>";
+		};
+		7DFC6CBC20C91A7C00A3D126 /* NLGPUImageCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DFC6CBD20C91A7C00A3D126 /* NLGPUImageCameraTests.m */,
+				7DFC6CBF20C91A7C00A3D126 /* Info.plist */,
+			);
+			path = NLGPUImageCameraTests;
+			sourceTree = "<group>";
+		};
+		7DFC6CC720C91A7C00A3D126 /* NLGPUImageCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7DFC6CC820C91A7C00A3D126 /* NLGPUImageCameraUITests.m */,
+				7DFC6CCA20C91A7C00A3D126 /* Info.plist */,
+			);
+			path = NLGPUImageCameraUITests;
+			sourceTree = "<group>";
+		};
+		7DFC6CD720C91BBC00A3D126 /* FilterMode */ = {
+			isa = PBXGroup;
+			children = (
+				7DFC6CE220C9211C00A3D126 /* NormalFilter.h */,
+				7DFC6CE320C9211C00A3D126 /* NormalFilter.m */,
+				7DB55A0C20DA31B700EA8015 /* NLGPUImage02Filter.h */,
+				7DB55A0D20DA31B700EA8015 /* NLGPUImage02Filter.m */,
+				7DB55A1720DB3C2700EA8015 /* NLGPUImageBluesFilter.h */,
+				7DB55A1820DB3C2700EA8015 /* NLGPUImageBluesFilter.m */,
+				7DB55A1A20DB3C4C00EA8015 /* NLGPUImageRetroFilter.h */,
+				7DB55A1B20DB3C4C00EA8015 /* NLGPUImageRetroFilter.m */,
+				7DB55A1D20DB3C7600EA8015 /* NLGPUImageDarkRedFilter.h */,
+				7DB55A1E20DB3C7600EA8015 /* NLGPUImageDarkRedFilter.m */,
+				7DB55A2020DB3C9600EA8015 /* NLGPUImageGrayOrangeFilter.h */,
+				7DB55A2120DB3C9600EA8015 /* NLGPUImageGrayOrangeFilter.m */,
+				7DB55A2320DB3CB300EA8015 /* NLGPUImagePermeableFilter.h */,
+				7DB55A2420DB3CB300EA8015 /* NLGPUImagePermeableFilter.m */,
+			);
+			path = FilterMode;
+			sourceTree = "<group>";
+		};
+		7DFC6CE920C9231A00A3D126 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7D28EA1D20E2545200ED0300 /* sample_iPod.m4v */,
+				7DFC6CA720C91A7A00A3D126 /* ViewController.h */,
+				7DFC6CA820C91A7A00A3D126 /* ViewController.m */,
+				7D28EA1820E242DF00ED0300 /* VideoProcessViewController.h */,
+				7D28EA1920E242DF00ED0300 /* VideoProcessViewController.m */,
+				7DFC6CE520C9230300A3D126 /* FilterCameraViewController.h */,
+				7DFC6CE620C9230300A3D126 /* FilterCameraViewController.m */,
+				7D6B4B3E20F83578006E7CA0 /* VideoPreviewPlayerViewController.h */,
+				7D6B4B3F20F83578006E7CA0 /* VideoPreviewPlayerViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7DFC6CEC20C929E200A3D126 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7DFC6CED20C92A9900A3D126 /* privateAPI.h */,
+				7D9A8EAD20CA872200A41D0F /* NSObject+MKUtil.h */,
+				7D9A8EAE20CA872200A41D0F /* NSObject+MKUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B89DFEC343356019ADF27E86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D28EA3220E2658A00ED0300 /* CoreGraphics.framework */,
+				7D28EA3020E2656C00ED0300 /* CoreVideo.framework */,
+				7D28EA2E20E2655300ED0300 /* OpenGLES.framework */,
+				7D28EA2C20E2653700ED0300 /* CoreMedia.framework */,
+				F6BF6242833929A8491D47F8 /* libPods-NLGPUImageCamera.a */,
+				2BE259E54E461B5009707159 /* libPods-NLGPUImageCameraTests.a */,
+				58B0FBBEC3F523B3ABBB7990 /* libPods-NLGPUImageCameraUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C082A276704EB90B2AD80508 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB7B892CC2DA903DBF357748 /* Pods-NLGPUImageCamera.debug.xcconfig */,
+				5DE5DC3FAAC237C1D17AB3C4 /* Pods-NLGPUImageCamera.release.xcconfig */,
+				796149337EC02FD8C6166ADE /* Pods-NLGPUImageCameraTests.debug.xcconfig */,
+				CB26C028A032DF7DF565ACFA /* Pods-NLGPUImageCameraTests.release.xcconfig */,
+				9FEF3789994ACC5E10771873 /* Pods-NLGPUImageCameraUITests.debug.xcconfig */,
+				56AC43361E19B528BE0B0D17 /* Pods-NLGPUImageCameraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DFC6CA020C91A7A00A3D126 /* NLGPUImageCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DFC6CCD20C91A7C00A3D126 /* Build configuration list for PBXNativeTarget "NLGPUImageCamera" */;
+			buildPhases = (
+				96CA2FEAF4080F2DBE338484 /* [CP] Check Pods Manifest.lock */,
+				7DFC6C9D20C91A7A00A3D126 /* Sources */,
+				7DFC6C9E20C91A7A00A3D126 /* Frameworks */,
+				7DFC6C9F20C91A7A00A3D126 /* Resources */,
+				5BE025743178DE508812DF79 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NLGPUImageCamera;
+			productName = NLGPUImageCamera;
+			productReference = 7DFC6CA120C91A7A00A3D126 /* NLGPUImageCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DFC6CB820C91A7C00A3D126 /* NLGPUImageCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DFC6CD020C91A7C00A3D126 /* Build configuration list for PBXNativeTarget "NLGPUImageCameraTests" */;
+			buildPhases = (
+				CE68F31AC6225145B3CA01C9 /* [CP] Check Pods Manifest.lock */,
+				7DFC6CB520C91A7C00A3D126 /* Sources */,
+				7DFC6CB620C91A7C00A3D126 /* Frameworks */,
+				7DFC6CB720C91A7C00A3D126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DFC6CBB20C91A7C00A3D126 /* PBXTargetDependency */,
+			);
+			name = NLGPUImageCameraTests;
+			productName = NLGPUImageCameraTests;
+			productReference = 7DFC6CB920C91A7C00A3D126 /* NLGPUImageCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DFC6CC320C91A7C00A3D126 /* NLGPUImageCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DFC6CD320C91A7C00A3D126 /* Build configuration list for PBXNativeTarget "NLGPUImageCameraUITests" */;
+			buildPhases = (
+				17A21697E48B008EB022A0AC /* [CP] Check Pods Manifest.lock */,
+				7DFC6CC020C91A7C00A3D126 /* Sources */,
+				7DFC6CC120C91A7C00A3D126 /* Frameworks */,
+				7DFC6CC220C91A7C00A3D126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DFC6CC620C91A7C00A3D126 /* PBXTargetDependency */,
+			);
+			name = NLGPUImageCameraUITests;
+			productName = NLGPUImageCameraUITests;
+			productReference = 7DFC6CC420C91A7C00A3D126 /* NLGPUImageCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DFC6C9920C91A7A00A3D126 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = kkmm;
+				TargetAttributes = {
+					7DFC6CA020C91A7A00A3D126 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					7DFC6CB820C91A7C00A3D126 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 7DFC6CA020C91A7A00A3D126;
+					};
+					7DFC6CC320C91A7C00A3D126 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 7DFC6CA020C91A7A00A3D126;
+					};
+				};
+			};
+			buildConfigurationList = 7DFC6C9C20C91A7A00A3D126 /* Build configuration list for PBXProject "NLGPUImageCamera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DFC6C9820C91A7A00A3D126;
+			productRefGroup = 7DFC6CA220C91A7A00A3D126 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DFC6CA020C91A7A00A3D126 /* NLGPUImageCamera */,
+				7DFC6CB820C91A7C00A3D126 /* NLGPUImageCameraTests */,
+				7DFC6CC320C91A7C00A3D126 /* NLGPUImageCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DFC6C9F20C91A7A00A3D126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFC6CB120C91A7C00A3D126 /* LaunchScreen.storyboard in Resources */,
+				7D28EA1E20E2545200ED0300 /* sample_iPod.m4v in Resources */,
+				7DFC6CAE20C91A7C00A3D126 /* Assets.xcassets in Resources */,
+				7DFC6CAC20C91A7A00A3D126 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFC6CB720C91A7C00A3D126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFC6CC220C91A7C00A3D126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17A21697E48B008EB022A0AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NLGPUImageCameraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BE025743178DE508812DF79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NLGPUImageCamera/Pods-NLGPUImageCamera-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NLGPUImageCamera/Pods-NLGPUImageCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96CA2FEAF4080F2DBE338484 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NLGPUImageCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE68F31AC6225145B3CA01C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NLGPUImageCameraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DFC6C9D20C91A7A00A3D126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6B4B4020F83578006E7CA0 /* VideoPreviewPlayerViewController.m in Sources */,
+				7DB55A0E20DA31B700EA8015 /* NLGPUImage02Filter.m in Sources */,
+				7DB55A1C20DB3C4C00EA8015 /* NLGPUImageRetroFilter.m in Sources */,
+				7DB55A2520DB3CB300EA8015 /* NLGPUImagePermeableFilter.m in Sources */,
+				7D9A8EAF20CA872200A41D0F /* NSObject+MKUtil.m in Sources */,
+				7DFC6CE420C9211C00A3D126 /* NormalFilter.m in Sources */,
+				7DB55A1F20DB3C7600EA8015 /* NLGPUImageDarkRedFilter.m in Sources */,
+				7D28EA1A20E242DF00ED0300 /* VideoProcessViewController.m in Sources */,
+				7DFC6CA920C91A7A00A3D126 /* ViewController.m in Sources */,
+				7DB55A2220DB3C9600EA8015 /* NLGPUImageGrayOrangeFilter.m in Sources */,
+				7DFC6CE720C9230300A3D126 /* FilterCameraViewController.m in Sources */,
+				7DFC6CB420C91A7C00A3D126 /* main.m in Sources */,
+				7DB55A1920DB3C2700EA8015 /* NLGPUImageBluesFilter.m in Sources */,
+				7DFC6CA620C91A7A00A3D126 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFC6CB520C91A7C00A3D126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFC6CBE20C91A7C00A3D126 /* NLGPUImageCameraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFC6CC020C91A7C00A3D126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFC6CC920C91A7C00A3D126 /* NLGPUImageCameraUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DFC6CBB20C91A7C00A3D126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DFC6CA020C91A7A00A3D126 /* NLGPUImageCamera */;
+			targetProxy = 7DFC6CBA20C91A7C00A3D126 /* PBXContainerItemProxy */;
+		};
+		7DFC6CC620C91A7C00A3D126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DFC6CA020C91A7A00A3D126 /* NLGPUImageCamera */;
+			targetProxy = 7DFC6CC520C91A7C00A3D126 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DFC6CAA20C91A7A00A3D126 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DFC6CAB20C91A7A00A3D126 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DFC6CAF20C91A7C00A3D126 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DFC6CB020C91A7C00A3D126 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DFC6CCB20C91A7C00A3D126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7DFC6CCC20C91A7C00A3D126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DFC6CCE20C91A7C00A3D126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB7B892CC2DA903DBF357748 /* Pods-NLGPUImageCamera.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FQ65WJV2D;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NLGPUImageCamera/PrefixHeader.pch;
+				INFOPLIST_FILE = NLGPUImageCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kkmm.NLGPUImageCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DFC6CCF20C91A7C00A3D126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE5DC3FAAC237C1D17AB3C4 /* Pods-NLGPUImageCamera.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FQ65WJV2D;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NLGPUImageCamera/PrefixHeader.pch;
+				INFOPLIST_FILE = NLGPUImageCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kkmm.NLGPUImageCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7DFC6CD120C91A7C00A3D126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796149337EC02FD8C6166ADE /* Pods-NLGPUImageCameraTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FQ65WJV2D;
+				INFOPLIST_FILE = NLGPUImageCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kkmm.NLGPUImageCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NLGPUImageCamera.app/NLGPUImageCamera";
+			};
+			name = Debug;
+		};
+		7DFC6CD220C91A7C00A3D126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB26C028A032DF7DF565ACFA /* Pods-NLGPUImageCameraTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FQ65WJV2D;
+				INFOPLIST_FILE = NLGPUImageCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kkmm.NLGPUImageCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NLGPUImageCamera.app/NLGPUImageCamera";
+			};
+			name = Release;
+		};
+		7DFC6CD420C91A7C00A3D126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEF3789994ACC5E10771873 /* Pods-NLGPUImageCameraUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FQ65WJV2D;
+				INFOPLIST_FILE = NLGPUImageCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kkmm.NLGPUImageCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NLGPUImageCamera;
+			};
+			name = Debug;
+		};
+		7DFC6CD520C91A7C00A3D126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56AC43361E19B528BE0B0D17 /* Pods-NLGPUImageCameraUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FQ65WJV2D;
+				INFOPLIST_FILE = NLGPUImageCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kkmm.NLGPUImageCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NLGPUImageCamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DFC6C9C20C91A7A00A3D126 /* Build configuration list for PBXProject "NLGPUImageCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DFC6CCB20C91A7C00A3D126 /* Debug */,
+				7DFC6CCC20C91A7C00A3D126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DFC6CCD20C91A7C00A3D126 /* Build configuration list for PBXNativeTarget "NLGPUImageCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DFC6CCE20C91A7C00A3D126 /* Debug */,
+				7DFC6CCF20C91A7C00A3D126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DFC6CD020C91A7C00A3D126 /* Build configuration list for PBXNativeTarget "NLGPUImageCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DFC6CD120C91A7C00A3D126 /* Debug */,
+				7DFC6CD220C91A7C00A3D126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DFC6CD320C91A7C00A3D126 /* Build configuration list for PBXNativeTarget "NLGPUImageCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DFC6CD420C91A7C00A3D126 /* Debug */,
+				7DFC6CD520C91A7C00A3D126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DFC6C9920C91A7A00A3D126 /* Project object */;
+}

@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  NLGPUImageCamera
+//
+//  Created by kkmm on 2018/6/7.
+//  Copyright © 2018年 kkmm. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <GPUImage/GPUImage.h>
+#import "privateAPI.h"
+#import "NSObject+MKUtil.h"
+#endif /* PrefixHeader_pch */
